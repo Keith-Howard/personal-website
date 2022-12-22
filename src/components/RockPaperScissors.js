@@ -23,13 +23,13 @@ function RockPaperScissors() {
 		let computerNum = Math.floor(Math.random() * 3) + 1;
 		switch (computerNum) {
 			case scissors:
-				setComputerImage(<img id="compImg" src="scissors.png"></img>);
+				setComputerImage(<img id="compImg" className="img" src="scissors.png"></img>);
 				break;
 			case paper:
-				setComputerImage(<img id="compImg" src="paper.png"></img>)
+				setComputerImage(<img id="compImg" className="img" src="paper.png"></img>)
 				break;
 			default:
-				setComputerImage(<img id="compImg" src="rock.png"></img>);
+				setComputerImage(<img id="compImg" className="img" src="rock.png"></img>);
 				}
 		return computerNum
 	}
@@ -75,13 +75,13 @@ function RockPaperScissors() {
 						<table id="rockPaperScissorTable">
 							<tr>
 								<td>
-									<button className="choiceButton" id="rock" onClick={() => {userChoice(rock, <img id="userImg" src="rock.png"></img>)}}>Rock</button>
+									<button className="choiceButton" id="rock" onClick={() => {userChoice(rock, <img id="userImg" className="img" src="rock.png"></img>)}}>Rock</button>
 								</td>
 								<td>
-									<button className="choiceButton" id="paper" onClick={() => {userChoice(paper, <img id="userImg" src="paper.png"></img>)}}>Paper</button>
+									<button className="choiceButton" id="paper" onClick={() => {userChoice(paper, <img id="userImg" className="img" src="paper.png"></img>)}}>Paper</button>
 								</td>
 								<td>
-									<button className="choiceButton" id="scissors" onClick={() => {userChoice(scissors, <img id="userImg" src="scissors.png"></img>)}}>Scissors</button>
+									<button className="choiceButton" id="scissors" onClick={() => {userChoice(scissors, <img id="userImg" className="img" src="scissors.png"></img>)}}>Scissors</button>
 								</td>
 							</tr>
 						</table>
@@ -92,10 +92,10 @@ function RockPaperScissors() {
 						<table id="choiceTable">
 							<tr>
 								<td>
-									<label>User</label>
+									<label className="playerLabel">User</label>
 								</td>
 								<td>
-									<label>Computer</label>
+									<label className="playerLabel">Computer</label>
 								</td>
 							</tr>
 							<tr>
