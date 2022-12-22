@@ -57,100 +57,102 @@ function RockPaperScissors() {
 
 
     return (
-        <div id="wrapper">
-            <h1>Rock, Paper, Scissors Shoot</h1>
-            <div id="outcomeMessageContainer" className="blinkMe">
-                {/* <p id="outcomeMessage">You Lost</p> */}
-				{outcome}
-            </div>
-            <table id="mainTable">
-			<tr>
-				<td>
-					<table id="rockPaperScissorTable">
-						<tr>
-							<td>
-								<button className="choiceButton" id="rock" onClick={() => {userChoice(rock, <img id="userImg" src="rock.png"></img>)}}>Rock</button>
-							</td>
-							<td>
-								<button className="choiceButton" id="paper" onClick={() => {userChoice(paper, <img id="userImg" src="paper.png"></img>)}}>Paper</button>
-							</td>
-							<td>
-								<button className="choiceButton" id="scissors" onClick={() => {userChoice(scissors, <img id="userImg" src="scissors.png"></img>)}}>Scissors</button>
-							</td>
-						</tr>
-					</table>
-				</td>
-			</tr>
-            <tr>
-				<td>
-					<table id="choiceTable">
-						<tr>
-							<td>
-								<label>User</label>
-							</td>
-							<td>
-								<label>Computer</label>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div className="container" id="userChoice">{userImage}</div>
-							</td>
-							<td>
-								<div className="container" id="computerChoice">{computerImage}</div>
-							</td>
-						</tr>
-					</table>
-				</td>	
-			<tr></tr>
-                <td>
-					<table id="winStatTable">
-						<tr>
-							<td>
-								<p>User<br/>Wins</p>
-								<div className="winContainer" id="userWon">{userWinCount}</div>
-							</td>
-							<td>
-								<p>Computer<br/>Wins</p>
-								<div className="winContainer" id="computerWon">{compWinCount}</div>
-							</td>
-							<td>
-								<p><br/>Draws </p>
-								<div className="winContainer" id="draws">{drawCount}</div>
-							</td>
-							<td>
-								<p>User Win<br/>Percentage</p>
-								<div className="winPercentage" id="userWinPercentage">{winPercent}</div>
-							</td>
-						</tr>
-					</table>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<table id="newGameResetTable">
-						<tr>
-							<td>
-								<button className="playAgainButton outcomeRow" id="newGame" onClick={() => {
-									setUserImage('');
-									setComputerImage('');
-									setOutcome('');
-								}}>Play Again</button>
-							</td>
-							<td>
-								<button className="resetButton" id="resetCountersButton" onClick={() => {
-									setUserWinCount(0);
-									setCompWinCount(0);
-									setDrawCount(0);
-									setWinPercent(0);
-								}}>Reset Stats</button>
-							</td>
-						</tr>
-					</table>
-				</td>	
-			</tr>
-		</table>
-    </div>
+		<div className="mainContainer" style={{backgroundImage: "backgroundPhoto.png"}}>
+			<div id="wrapper">
+				<h1>Rock, Paper, Scissors Shoot</h1>
+				<div id="outcomeMessageContainer" className="blinkMe">
+					{/* <p id="outcomeMessage">You Lost</p> */}
+					{outcome}
+				</div>
+				<table id="mainTable">
+				<tr>
+					<td>
+						<table id="rockPaperScissorTable">
+							<tr>
+								<td>
+									<button className="choiceButton" id="rock" onClick={() => {userChoice(rock, <img id="userImg" src="rock.png"></img>)}}>Rock</button>
+								</td>
+								<td>
+									<button className="choiceButton" id="paper" onClick={() => {userChoice(paper, <img id="userImg" src="paper.png"></img>)}}>Paper</button>
+								</td>
+								<td>
+									<button className="choiceButton" id="scissors" onClick={() => {userChoice(scissors, <img id="userImg" src="scissors.png"></img>)}}>Scissors</button>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table id="choiceTable">
+							<tr>
+								<td>
+									<label>User</label>
+								</td>
+								<td>
+									<label>Computer</label>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div className="container" id="userChoice">{userImage}</div>
+								</td>
+								<td>
+									<div className="container" id="computerChoice">{computerImage}</div>
+								</td>
+							</tr>
+						</table>
+					</td>	
+				<tr></tr>
+					<td>
+						<table id="winStatTable">
+							<tr>
+								<td>
+									<p>User<br/>Wins</p>
+									<div className="winContainer" id="userWon">{userWinCount}</div>
+								</td>
+								<td>
+									<p>Computer<br/>Wins</p>
+									<div className="winContainer" id="computerWon">{compWinCount}</div>
+								</td>
+								<td>
+									<p><br/>Draws </p>
+									<div className="winContainer" id="draws">{drawCount}</div>
+								</td>
+								<td>
+									<p>User Win<br/>Percentage</p>
+									<div className="winPercentage" id="userWinPercentage">{winPercent}</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table id="newGameResetTable">
+							<tr>
+								<td>
+									<button className="playAgainButton outcomeRow" id="newGame" onClick={() => {
+										setUserImage('');
+										setComputerImage('');
+										setOutcome('');
+									}}>Play Again</button>
+								</td>
+								<td>
+									<button className="resetButton" id="resetCountersButton" onClick={() => {
+										setUserWinCount(0);
+										setCompWinCount(0);
+										setDrawCount(0);
+										setWinPercent(0);
+									}}>Reset Stats</button>
+								</td>
+							</tr>
+						</table>
+					</td>	
+				</tr>
+			</table>
+		</div>
+	</div>
     )
 }
 
