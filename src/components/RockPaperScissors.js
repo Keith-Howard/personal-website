@@ -17,9 +17,7 @@ function RockPaperScissors() {
 
 
 	function updateWinPercentageCalculation() {
-		setWinPercent((userWinCount / (userWinCount + compWinCount + drawCount)).toFixed(2));
-		//var winPer = (userWins / (userWins + computerWins + draws)) * 100;
-		//userWinPercentage.innerHTML = winPercentage.toFixed(2);
+		setWinPercent(((userWinCount / (userWinCount + compWinCount + drawCount)) * 100).toFixed(2));
 	}
 	
 	function setComputerNumAndPhoto() {
