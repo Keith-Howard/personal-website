@@ -15,8 +15,8 @@ function RockPaperScissors() {
 	const [winPercent, setWinPercent] = React.useState(0);
 
 
-	function updateWinPercentageCalculation() {
-		setWinPercent(((userWinCount / (userWinCount + compWinCount + drawCount)) * 100).toFixed(2));
+	function updateWinPercentageCalculation(user, comp, draw) {
+		setWinPercent(((user / (user + comp + draw)) * 100).toFixed(2));
 	}
 	
 	function setComputerNumAndPhoto() {
@@ -35,6 +35,9 @@ function RockPaperScissors() {
 	}
 
 	function userChoice(choice, image) {
+		let userWins = userWinCount;
+		let compWins = compWinCount;
+		let draws = drawCount;
 		console.log('user chose ' + choice);
 		setUserImage(image);
 		let computerNum = setComputerNumAndPhoto();
@@ -43,25 +46,27 @@ function RockPaperScissors() {
 			userNum === rock && computerNum === scissors || 
 			userNum === scissors && computerNum === paper) {
 			setOutcome(<p id="outcomeMessage">!YOU WON!</p>)
-			setUserWinCount(userWinCount + 1);
+			userWins++;
+			setUserWinCount(userWins);
 		} else if (userNum === computerNum) {
 			setOutcome(<p id="outcomeMessage">!Draw, Nobody Wins!</p>);
-			setDrawCount(drawCount + 1);
+			draws++;
+			setDrawCount(draws);
 		} else {
 			setOutcome(<p id="outcomeMessage">!YOU LOST!</p>);
-			setCompWinCount(compWinCount + 1);
+			compWins++;
+			setCompWinCount(compWins);
 		}
 
-		updateWinPercentageCalculation();
+		updateWinPercentageCalculation(userWins, compWins, draws);
 	};
 
 
     return (
-		<div className="mainContainer" style={{backgroundImage: "backgroundPhoto.png"}}>
+		<div className="mainContainer">
 			<div id="wrapper">
-				<h1>Rock, Paper, Scissors Shoot</h1>
+				<h1 className="gameTitle">Rock, Paper, Scissors Shoot</h1>
 				<div id="outcomeMessageContainer" className="blinkMe">
-					{/* <p id="outcomeMessage">You Lost</p> */}
 					{outcome}
 				</div>
 				<table id="mainTable">
@@ -95,10 +100,10 @@ function RockPaperScissors() {
 							</tr>
 							<tr>
 								<td>
-									<div className="container" id="userChoice">{userImage}</div>
+									<div className="imgContainer" id="userChoice">{userImage}</div>
 								</td>
 								<td>
-									<div className="container" id="computerChoice">{computerImage}</div>
+									<div className="imgContainer" id="computerChoice">{computerImage}</div>
 								</td>
 							</tr>
 						</table>
