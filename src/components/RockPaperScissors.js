@@ -35,6 +35,9 @@ function RockPaperScissors() {
 	}
 
 	function userChoice(choice, image) {
+		document.getElementById("scissors").disabled = true;
+		document.getElementById("paper").disabled = true;
+		document.getElementById("rock").disabled = true;
 		let userWins = userWinCount;
 		let compWins = compWinCount;
 		let draws = drawCount;
@@ -138,6 +141,9 @@ function RockPaperScissors() {
 							<tr>
 								<td>
 									<button className="playAgainButton outcomeRow" id="newGame" onClick={() => {
+										document.getElementById("rock").disabled = false;
+										document.getElementById("paper").disabled = false;
+										document.getElementById("scissors").disabled = false;
 										setUserImage('');
 										setComputerImage('');
 										setOutcome('');
