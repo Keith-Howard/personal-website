@@ -13,7 +13,6 @@ function RockPaperScissors() {
 	const [compWinCount, setCompWinCount] = React.useState(0);
 	const [drawCount, setDrawCount] = React.useState(0);
 	const [winPercent, setWinPercent] = React.useState(0);
-	const [newGame, setNewGame] = React.useState(true);
 
 
 	function updateWinPercentageCalculation() {
@@ -37,7 +36,6 @@ function RockPaperScissors() {
 
 	function userChoice(choice, image) {
 		console.log('user chose ' + choice);
-		setNewGame(false);
 		setUserImage(image);
 		let computerNum = setComputerNumAndPhoto();
 		let userNum = choice;
@@ -47,10 +45,10 @@ function RockPaperScissors() {
 			setOutcome(<p id="outcomeMessage">!YOU WON!</p>)
 			setUserWinCount(userWinCount + 1);
 		} else if (userNum === computerNum) {
-			setOutcome('!Draw, Nobody Wins!');
+			setOutcome(<p id="outcomeMessage">!Draw, Nobody Wins!</p>);
 			setDrawCount(drawCount + 1);
 		} else {
-			setOutcome('!YOU LOST!');
+			setOutcome(<p id="outcomeMessage">!YOU LOST!</p>);
 			setCompWinCount(compWinCount + 1);
 		}
 
@@ -137,7 +135,6 @@ function RockPaperScissors() {
 									setUserImage('');
 									setComputerImage('');
 									setOutcome('');
-									setNewGame(true);
 								}}>Play Again</button>
 							</td>
 							<td>
