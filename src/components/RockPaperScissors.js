@@ -110,8 +110,9 @@ function RockPaperScissors() {
 								</td>
 							</tr>
 						</table>
-					</td>	
-				<tr></tr>
+					</td>
+				</tr>	
+				<tr>
 					<td>
 						<table id="winStatTable">
 							<tr>
