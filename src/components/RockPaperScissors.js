@@ -68,11 +68,13 @@ function RockPaperScissors() {
     return (
 		<div className="mainContainer">
 			<div id="wrapper">
-				<h1 className="gameTitle">Rock, Paper, Scissors Shoot</h1>
-				<div id="outcomeMessageContainer" className="blinkMe">
-					{outcome}
-				</div>
 				<table id="mainTable">
+				<tr>
+					<h1 className="gameTitle">Rock, Paper, Scissors Shoot</h1>
+					<div id="outcomeMessageContainer" className="blinkMe">
+						{outcome}
+					</div>
+				</tr>
 				<tr>
 					<td>
 						<table id="rockPaperScissorTable">
