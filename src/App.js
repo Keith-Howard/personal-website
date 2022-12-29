@@ -9,7 +9,7 @@ function App() {
     <HashRouter>
       <div>
         <NavBar/>       
-          <div className="container ml-2" style={{padding: "20px"}}>
+          <div className="navbarContainer ml-2">
             <Routes>
               <Route path="/components/Test" element={<Test />} />
               <Route path="/components/RockPaperScissors" element={<RockPaperScissors />} />

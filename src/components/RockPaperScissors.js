@@ -2,6 +2,8 @@ import React from 'react';
 import './RockPaperScissors.css';
 
 function RockPaperScissors() {
+	// let background = getElementById('root');
+	// document.body.style.backgroundImage = "url(backgroundPhoto.png)";
     console.log('Rock Paper Scissors');
 	const scissors = 1;
 	const paper = 2;
