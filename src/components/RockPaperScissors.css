@@ -1,5 +1,7 @@
 .mainContainer {
 	padding-top: 50px;
+	width: 75vw;
+	height: 75vh;
 }
 
 #wrapper{
