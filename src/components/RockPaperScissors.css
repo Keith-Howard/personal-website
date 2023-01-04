@@ -41,14 +41,6 @@
 	margin-right: auto;
 }
 
-.gameTitle {
-	text-align: center;
-	font-size: 4em;
-	font-family: OCR A Std, monospace;
-    color: royalblue;
-    -webkit-text-stroke: 1px white;
-}
-
 .choiceButton, .resetButton {
 	margin: 1rem;
 	width: 5em;

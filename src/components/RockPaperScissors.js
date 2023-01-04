@@ -72,7 +72,6 @@ function RockPaperScissors() {
 			<div id="wrapper">
 				<table id="mainTable">
 				<tr>
-					<h1 className="gameTitle">Rock, Paper, Scissors Shoot</h1>
 					<div id="outcomeMessageContainer" className="blinkMe">
 						{outcome}
 					</div>
