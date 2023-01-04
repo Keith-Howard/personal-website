@@ -42,7 +42,7 @@
 }
 
 .choiceButton, .resetButton, .playAgainButton {
-	margin: 1rem;
+	margin: .25rem;
 	width: 5em;
 	border-radius: 12px;
 	height: 3em;
