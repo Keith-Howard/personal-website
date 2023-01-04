@@ -150,7 +150,7 @@ function RockPaperScissors() {
 									}}>Play Again</button>
 								</td>
 								<td>
-									<button className="resetButton" id="resetCountersButton" onClick={() => {
+									<button className="resetButton" onClick={() => {
 										setUserWinCount(0);
 										setCompWinCount(0);
 										setDrawCount(0);

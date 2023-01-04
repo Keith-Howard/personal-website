@@ -41,25 +41,12 @@
 	margin-right: auto;
 }
 
-.choiceButton, .resetButton {
+.choiceButton, .resetButton, .playAgainButton {
 	margin: 1rem;
-	width: 4.5em;
+	width: 5em;
 	border-radius: 12px;
 	height: 3em;
 	font-size: 1.5em;
-}
-
-.playAgainButton {
-	border-radius: 12px;
-	width: 5em;
-	height: 3em;
-	font-size: 1.5em;
-	display: block;
-}
-
-#resetCountersButton {
-	width: 5em;
-	height: 3em;
 }
 
 .playerLabel {
