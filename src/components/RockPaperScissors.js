@@ -25,13 +25,13 @@ function RockPaperScissors() {
 		let computerNum = Math.floor(Math.random() * 3) + 1;
 		switch (computerNum) {
 			case scissors:
-				setComputerImage(<img id="compImg" className="img" src="scissors.png"></img>);
+				setComputerImage(<img id="compImg" className="img" src="./rockPaperScissorsPics/scissors.png"></img>);
 				break;
 			case paper:
-				setComputerImage(<img id="compImg" className="img" src="paper.png"></img>)
+				setComputerImage(<img id="compImg" className="img" src="./rockPaperScissorsPics/paper.png"></img>)
 				break;
 			default:
-				setComputerImage(<img id="compImg" className="img" src="rock.png"></img>);
+				setComputerImage(<img id="compImg" className="img" src="./rockPaperScissorsPics/rock.png"></img>);
 				}
 		return computerNum
 	}
@@ -77,13 +77,13 @@ function RockPaperScissors() {
 						<table id="rockPaperScissorTable">
 							<tr>
 								<td>
-									<button className="choiceButton" id="rock" onClick={() => {userChoice(rock, <img id="userImg" className="img" src="rock.png"></img>)}}>Rock</button>
+									<button className="choiceButton" id="rock" onClick={() => {userChoice(rock, <img id="userImg" className="img" src="./rockPaperScissorsPics/rock.png"></img>)}}>Rock</button>
 								</td>
 								<td>
-									<button className="choiceButton" id="paper" onClick={() => {userChoice(paper, <img id="userImg" className="img" src="paper.png"></img>)}}>Paper</button>
+									<button className="choiceButton" id="paper" onClick={() => {userChoice(paper, <img id="userImg" className="img" src="./rockPaperScissorsPics/paper.png"></img>)}}>Paper</button>
 								</td>
 								<td>
-									<button className="choiceButton" id="scissors" onClick={() => {userChoice(scissors, <img id="userImg" className="img" src="scissors.png"></img>)}}>Scissors</button>
+									<button className="choiceButton" id="scissors" onClick={() => {userChoice(scissors, <img id="userImg" className="img" src="./rockPaperScissorsPics/scissors.png"></img>)}}>Scissors</button>
 								</td>
 							</tr>
 						</table>
