@@ -1,6 +1,14 @@
+.eightballBackground {
+    margin: auto;
+    background-color: rgb(40, 40, 226);
+    width: 100vw;
+    height:100vh;
+}
+
 .magic8BallContainer {
     margin: auto;
-    background-color: blue;
-    width: 20em;
-    height:50em;
+    background-color: white;
+    border-radius: 12px;
+    width: 50em;
+    height:70em;
 }
