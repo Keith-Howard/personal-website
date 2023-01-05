@@ -42,11 +42,12 @@
 }
 
 .choiceButton, .resetButton, .playAgainButton {
+	padding: 0px;
 	margin: .25rem;
-	width: 5em;
+	width: 4.50em;
 	border-radius: 12px;
 	height: 3em;
-	font-size: 1.5em;
+	font-size: 1.20em;
 }
 
 .playerLabel {
