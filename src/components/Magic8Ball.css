@@ -1,4 +1,5 @@
 .eightballBackground {
+    display: fixed;
     margin: auto;
     background-color: rgb(40, 40, 226);
     width: 100vw;
@@ -6,11 +7,12 @@
 }
 
 .magic8BallContainer {
+    display: fixed;
     margin: auto;
     background-color: white;
     border-radius: 12px;
-    width: 50em;
-    height:70em;
+    width: 20vw;
+	height: 65vh;
 }
 
 .eightBalluiTable {
@@ -18,10 +20,12 @@
 }
 
 .eightballImg {
-    width: 25em;
-    height: 25em;
+    margin: auto;
+    width: 16em;
+    height: 16em;
 }
 
 .inputQuestion {
+    margin-top: 50px;
     width: 20em;
 }
