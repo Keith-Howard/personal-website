@@ -18,6 +18,9 @@ function NavBar() {
                     <NavLink className="nav-link" to="/components/RockPaperScissors">Rock Paper Scissors</NavLink>
                     </li>
                     <li className="nav-item">
+                    <NavLink className="nav-link" to="/components/MyArt">My Art</NavLink>
+                    </li>
+                    <li className="nav-item">
                     <NavLink className="nav-link" to="/components/Magic8Ball">Magic 8 Ball</NavLink>
                     </li>
                 </ul>
