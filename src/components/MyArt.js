@@ -22,10 +22,6 @@ function MyArt() {
             <div id="artworkContainer">
                 <img className="artwork" src="./artworkPics/alco.jpg"></img><img className="artwork" src="./artworkPics/anger.jpg"></img><img className="artwork" src="./artworkPics/bridge.jpg"></img><img className="artwork" src="./artworkPics/calendercover.jpg"></img><img className="artwork" src="./artworkPics/x-mencalender.jpg"></img><img className="artwork" src="./artworkPics/spidermancalender.jpg"></img><img className="artwork" src="./artworkPics/croppedstarter.jpg"></img><img className="artwork" src="./artworkPics/landscapeandclouds.jpg"></img><img className="artwork" src="./artworkPics/jerseytransit.jpg"></img><img className="artwork" src="./artworkPics/penandlock.jpg"></img><img className="artwork" src="./artworkPics/waterlines.jpg"></img><img className="artwork" src="./artworkPics/viking.jpg"></img><img className="artwork" src="./artworkPics/suspension.jpg"></img><img className="artwork" src="./artworkPics/magicflute.jpg"></img><img className="artwork" src="./artworkPics/starter.jpg"></img><img className="artwork" src="./artworkPics/trainstation.jpg"></img><img className="artwork" src="./artworkPics/washingmachine.jpg"></img>
             </div>
-            <div className="artworkFooter">
-                <button type="button "className="topButton"><img className="artworkButton" src="favicon.ico"></img></button>
-                <p className="topText">Back to Top</p>
-            </div>
             
         </>
     )
