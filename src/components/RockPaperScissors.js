@@ -70,8 +70,12 @@ function RockPaperScissors() {
     return (
 		<div className="mainContainer">
 			<div id="wrapper">
-				<table id="mainTable">
-				<div id="outcomeMessageContainer" className="blinkMe">{outcome}</div>
+			<table id="mainTable">
+				<tr>
+					<td>
+						<div id="outcomeMessageContainer" className="blinkMe">{outcome}</div>
+					</td>
+				</tr>
 				<tr>
 					<td>
 						<table id="rockPaperScissorTable">

@@ -1,3 +1,41 @@
 #artworkContainer {
-    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.artwork {
+    padding: 5%;
+    height: 75vh;
+    margin: auto;
+}
+.topButton {
+    width: 9rem;
+    height:9rem;
+    background-color: black;
+}
+
+.artworkButton {
+    height:7.5rem;
+}
+
+.topText {
+    margin: auto;
+}
+
+.artworkFooter {
+    margin: center;
+}
+
+@media only screen and (max-width: 600px) {
+    #artworkContainer {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .artwork {
+        padding: 5%;
+        width: 75%;
+        height: auto;
+        margin: auto;
+    }   
+
 }

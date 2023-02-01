@@ -20,9 +20,9 @@ function NavBar() {
                     <li className="nav-item">
                     <NavLink className="nav-link" to="/components/MyArt">My Art</NavLink>
                     </li>
-                    <li className="nav-item">
+                    {/*<li className="nav-item">
                     <NavLink className="nav-link" to="/components/Magic8Ball">Magic 8 Ball</NavLink>
-                    </li>
+                    </li>*/}
                 </ul>
                 </div>
             </div>

@@ -3,7 +3,7 @@ import React from 'react';
 
 function Magic8Ball() {
     const [eightBall, setEightBall] = React.useState("./magic8BallPics/magic8ball.png");
-    const [question, setQuestion] = React.useState('');
+    //const [question, setQuestion] = React.useState('');
     const responses = [["countOnIt", "no", "notNow", "yes"],
                          ["askAgain", "cannotTellNow", "maybe", "waitForIt"]];
 
@@ -12,14 +12,18 @@ function Magic8Ball() {
             <div className='magic8BallContainer'>
                 <table className='eightBalluiTable'>
                     <tr>
-                        <img className="eightballImg" src={eightBall}></img>
+                        <td>
+                            <img className="eightballImg" src={eightBall}></img>
+                        </td>
                     </tr>
                     <tr>
-                        <input className="inputQuestion" placeholder='ASK QUESTION...'></input>
-                        <button onClick={()=> {
-                            let firstResponseIndex = Math.floor(Math.random() * 2);
-                            let secondResponseIndex = Math.floor(Math.random() * 4);
-                            setEightBall(`./magic8BallPics/${responses[firstResponseIndex][secondResponseIndex]}.png`)}}>Shake!</button>
+                        <td>
+                            <input className="inputQuestion" placeholder='ASK QUESTION...'></input>
+                            <button onClick={()=> {
+                                let firstResponseIndex = Math.floor(Math.random() * 2);
+                                let secondResponseIndex = Math.floor(Math.random() * 4);
+                                setEightBall(`./magic8BallPics/${responses[firstResponseIndex][secondResponseIndex]}.png`)}}>Shake!</button>
+                        </td>
                     </tr>
                 </table>
             </div>  
