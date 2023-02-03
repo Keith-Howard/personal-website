@@ -3,7 +3,8 @@ import React from 'react';
 
 function Magic8Ball() {
     const [eightBall, setEightBall] = React.useState("./magic8BallPics/magic8ball.png");
-    //const [question, setQuestion] = React.useState('');
+    //const [question, setQuestion] = React.useState(''); 
+    
     const responses = [["countOnIt", "no", "notNow", "yes"],
                          ["askAgain", "cannotTellNow", "maybe", "waitForIt"]];
 
